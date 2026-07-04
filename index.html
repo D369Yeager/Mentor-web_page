@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alumni Mentorship Platform</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🎓 Alumni Mentorship Platform</h1>
+
+<nav>
+
+<a href="#mentors">Mentors</a>
+<a href="#booking">Booking</a>
+<a href="#forum">Forum</a>
+<a href="#dashboard">Dashboard</a>
+
+</nav>
+
+</header>
+
+<section id="mentors">
+
+<h2>Mentor Profiles</h2>
+
+<div id="mentorContainer"></div>
+
+</section>
+
+<section id="booking">
+
+<h2>Book a Mentorship Session</h2>
+
+<form id="bookingForm">
+
+<input type="text" id="studentName" placeholder="Student Name" required>
+
+<select id="mentorSelect"></select>
+
+<input type="date" id="bookingDate" required>
+
+<button type="submit">Book Session</button>
+
+</form>
+
+</section>
+
+<section id="forum">
+
+<h2>Discussion Forum</h2>
+
+<form id="forumForm">
+
+<input type="text" id="username" placeholder="Your Name" required>
+
+<textarea id="message" placeholder="Share your question or insight"></textarea>
+
+<button type="submit">Post</button>
+
+</form>
+
+<div id="posts"></div>
+
+</section>
+
+<section id="dashboard">
+
+<h2>Dashboard</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Total Mentors</h3>
+<p id="mentorCount"></p>
+</div>
+
+<div class="card">
+<h3>Total Bookings</h3>
+<p id="bookingCount"></p>
+</div>
+
+<div class="card">
+<h3>Total Posts</h3>
+<p id="postCount"></p>
+</div>
+
+</div>
+
+<h3>Booking Requests</h3>
+
+<ul id="bookingList"></ul>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
